@@ -7,26 +7,45 @@ class FirstJava{
         int a = sc.nextInt();
         System.out.println("enter 2nd number:");
         int b = sc.nextInt();
-        System.out.println("enter 3rd number:");
-        int c = sc.nextInt();
+        System.out.println("enter operation");
+        String operation = sc.nextLine();
 
-        largeNumber(a, b, c);
+       myCalc(operation);
 
 } 
-    public static int largeNumber(int a, int b, int c){
-        if(a>b && a>c){
-            System.out.println(a+ "is gratest number");
-        } else if(b>a && b>c){
-            System.out.println(b+ "is gratest number");
-        }else if(c>a && c>b){
-            System.out.println(c+ "is gratest number");
-        }else if(a==b && b==c && a==c){
-            System.out.println("all numbers are equal");
-        }else{
-            System.out.println("invalid number");
-        }
-
-        return a;
+    public static void myCalc(String operation){
+       if(operation == add){
+        sum();
+       }else if(operation == sub){
+        sub();
+       }else if(operation == mul){
+        mul();
+       }else if(operation == div){
+        div();
+       }else{
+        System.out.println("invalid");
+       }
     }
+    public static int sum(int a, int b){
+       int sum = a + b;
+       System.out.println("addition of 2 numbers:" +sum);
+       return sum;
+    } 
+    public static int sub(int a, int b){
+       int sub = a - b;
+       System.out.println("subtraction of 2 numbers:" +sub);
+       return sub;
+    }
+    public static int mul(int a, int b){
+       int mul = a * b;
+       System.out.println("subtraction of 2 numbers:" +mul);
+       return mul;
+    }
+    public static int div(int a, int b){
+       int div = a / b;
+       System.out.println("subtraction of 2 numbers:" +div);
+       return div;
+    }
+
 
 }
