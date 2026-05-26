@@ -3,19 +3,19 @@ import java.util.Scanner;
 public class MiniAtm {
 
     public static void main(String args[]){
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter your age: ");
-    int age = sc.nextInt();
-    checkingVote(age);
-    }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter number: ");
+        int a = sc.nextInt();
+        factCalc(a);
 
-    public static int checkingVote(int age){
-        if(age >=18){
-            System.out.println("you are eglibel for vote");
-        }else{
-            System.out.println("NOT ELEIGBLE");
-        }
-        return age;
     }
+ public static int factCalc(int a){
+ int factorial = 1;
+    for (int i = a; i >= 1; i--){
+        factorial = factorial * i;
+    }
+    System.out.println("factorial:" +factorial);
+    return a;
+ }
 }
 
