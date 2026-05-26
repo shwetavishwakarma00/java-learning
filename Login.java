@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MiniAtm {
+public class Login {
 
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
