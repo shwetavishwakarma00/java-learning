@@ -6,16 +6,23 @@ public class MiniAtm {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter number: ");
         int a = sc.nextInt();
-        factCalc(a);
+        primeChecker(a);
 
     }
- public static int factCalc(int a){
- int factorial = 1;
-    for (int i = a; i >= 1; i--){
-        factorial = factorial * i;
+ public static void primeChecker(int a){
+    boolean isPrime = true;
+
+    for(int i = 2; i <= a/2; i++){
+        if(a % i == 0 ){
+            isPrime = false;
+            break;
+        }
     }
-    System.out.println("factorial:" +factorial);
-    return a;
+    if(isPrime){
+        System.out.println("prime number");
+    }else {
+        System.out.println("not Prime number");
+    }
  }
 }
 
