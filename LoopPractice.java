@@ -5,11 +5,13 @@ public class LoopPractice {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number: ");
         int num = sc.nextInt();
-        int factorial = 1;
-        for(int i= 1; i<=num; i++){
-            factorial = factorial * i ;
+        int reverse =0;
+        while(num != 0){
+            int digit = num%10;
+            reverse = reverse * 10 + digit;
+            num = num/10;
         }
-        System.out.println(factorial);
-
+        System.out.println(reverse);
+        
     }
 }
