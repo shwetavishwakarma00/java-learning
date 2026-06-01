@@ -5,13 +5,18 @@ public class LoopPractice {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number: ");
         int num = sc.nextInt();
-        int count =0;
-        while(num != 0){
-            int digit = num%10;
-            count = count + 1;
-            num = num/10;
+        boolean isPrime = true;
+
+        for( int i = 2; i <= num/2; i++){
+            if( num % i == 0){
+               isPrime = false;
+               System.out.println("not prime");
+               break; 
+            }else{
+                isPrime = true;
+                System.out.println("number is prime");
+            }
         }
-        System.out.println(count);
         
     }
 }
