@@ -2,17 +2,11 @@ import java.util.Scanner;
 
 public class LoopPractice {
     public static void main(String args[]){
-        int first = 0;
-        int second = 1;
-        
-        for( int i = 0; i <= 50; i++){
-           int next = first + second;
-           System.out.println(next);
-           first = second;
-           second = next;
+        for(int i = 1; i<=6 ; i++){
+            for(int y = 1; y <= (i-1) ; y++){
+                System.out.print("*");
+            }
+            System.out.println(" ");
         }
-            
-
-        
     }
 }
