@@ -7,12 +7,10 @@ import java.util.Date;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.Timer;
-
 public class DigitalClock extends JFrame {
     private JLabel heading;
     private JLabel clocJLabel;
     private Font font = new Font("", Font.BOLD, 32);
-
     DigitalClock()
     {
         super.setTitle("MyClock");
@@ -22,7 +20,6 @@ public class DigitalClock extends JFrame {
         this.startClock();
         super.setVisible(true);
     }
-
     public void createGUI(){
         heading= new JLabel("MyClock");
         clocJLabel= new JLabel("clock");
@@ -39,7 +36,6 @@ public class DigitalClock extends JFrame {
                 // String datTime =new Date().toLocaleString();
                 Date d=new Date();
                 SimpleDateFormat sfd= new SimpleDateFormat("hh : mm : ss a");
-
                 String datTime = sfd.format(d);
                 clocJLabel.setText(datTime);
             }
