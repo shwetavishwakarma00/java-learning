@@ -9,9 +9,7 @@ class FirstJava{
         int b = sc.nextInt();
         System.out.println("enter operation");
         String operation = sc.nextLine();
-
        myCalc(operation);
-
 } 
     public static void myCalc(String operation){
        if(operation == add){
@@ -46,6 +44,4 @@ class FirstJava{
        System.out.println("subtraction of 2 numbers:" +div);
        return div;
     }
-
-
 }
