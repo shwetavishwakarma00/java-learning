@@ -4,14 +4,16 @@ import java.util.Scanner;
 public class Strings {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the sentance: ");
+        System.out.println("Enter the word: ");
         String word = sc.nextLine();
-        
-        if(word.contains("Java")){
-            System.out.println("Java found");
-        }else{
-            System.out.println("Not found");
+        word = word.toLowerCase();
+        int count = 0;
+        for(int i=0; i<(word.length()); i++){
+            char ch = word.charAt(i);
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u'){
+                count++;
+            }
         }
-
+        System.out.println(count);
     }
 }
