@@ -5,6 +5,9 @@ public class Strings {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the word: ");
         String word = sc.nextLine();
-        System.out.println(word.length());
+        System.out.println(word.charAt(0));
+        int strInd = word.length()-1;  // beacuse it gives chater count not index count
+        System.out.println(word.charAt(strInd));
+
     }
 }
