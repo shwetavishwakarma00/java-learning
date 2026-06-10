@@ -11,6 +11,10 @@ public class Strings {
             char ch = word.charAt(i);
             reverse = reverse + ch;
         }
-        System.out.println(reverse);
+        if(word.equals(reverse)){
+                System.out.println("Palidrom word");
+            }else{
+                System.out.println("not palidrome");
+            }
     }
 }
