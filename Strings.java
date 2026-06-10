@@ -5,16 +5,16 @@ public class Strings {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the word: ");
         String word = sc.nextLine();
-        String reverse = "";
+        System.out.println("Enter a character: ");
+        char chr = sc.next().charAt(0);
+        int count = 0;
         
-        for(int i=(word.length()-1); i>=0; i--){
+        for(int i=0; i<word.length(); i++){
             char ch = word.charAt(i);
-            reverse = reverse + ch;
-        }
-        if(word.equals(reverse)){
-                System.out.println("Palidrom word");
-            }else{
-                System.out.println("not palidrome");
+            if(ch == chr){
+                count++;
             }
+        }
+        System.out.println(count);
     }
 }
