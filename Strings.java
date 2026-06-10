@@ -5,17 +5,12 @@ public class Strings {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the word: ");
         String word = sc.nextLine();
-        int upperCase = 0;
-        int lowerCase = 0;
-        for(int i=0; i<(word.length()); i++){
+        String reverse = "";
+        
+        for(int i=(word.length()-1); i>=0; i--){
             char ch = word.charAt(i);
-            if(Character.isUpperCase(ch)){
-                upperCase++;
-            }else{
-                lowerCase++;
-            }
+            reverse = reverse + ch;
         }
-        System.out.println("UpperCase: "+upperCase);
-        System.out.println("LowerCase: "+lowerCase);
+        System.out.println(reverse);
     }
 }
