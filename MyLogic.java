@@ -5,11 +5,12 @@ public class MyLogic {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number: ");
         int num = sc.nextInt();
-        int sum = 0;
+        int mul = 0;
 
-        for(int i = 1; i <= num; i++){
-            sum = sum + i;
+        for(int i = 1; i <= 10; i++){
+            mul = num * i;
+            System.out.println(mul);
         }
-        System.out.println(sum);
+        
     }
 }
