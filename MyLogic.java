@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 public class MyLogic {
     public static void main(String args[]){
-      Scanner sc = new Scanner(System.in);
-      System.out.println("enter the word: ");
-      String word = sc.nextLine();
+     int[] arr = {1,2,3,4,5};
 
-      System.out.println(word.length());
+     for(int num : arr){
+        if(num%2 == 0){
+            System.out.println(num);
+        }
+     }
+
 }
 }
