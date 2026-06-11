@@ -4,13 +4,13 @@ public class MyLogic {
     public static void main(String args[]){
         //User se number lo aur check karo even hai ya odd.
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        int num = sc.nextInt();
+        System.out.println("Enter age: ");
+        int age = sc.nextInt();
 
-        if(num%2 == 0){
-            System.out.println("even number");
+        if(age >= 18  ){
+            System.out.println("eligeblwe for vote");
         }else{
-            System.out.println("odd number");
+            System.out.println("not eligible");
         }
     }
 }
