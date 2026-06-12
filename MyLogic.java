@@ -10,9 +10,11 @@ public class MyLogic {
      char ch = ' ';
      for(int i = 0; i < word.length(); i++){
          ch = word.charAt(i);
+         if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+            System.out.println(ch+ " vowels");
+         }
      }
-     System.out.println(word.charAt(0));
-     System.out.println(ch);
+     
 
 }
 }
