@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class MyLogic {
     public static void main(String args[]){
-     int[] arr = {1,2,3,4,5,69};
-     int sum = 0;
-     int average = 0;
-
-     for(int num : arr){
-        sum = sum +num;
-        average = sum / arr.length;
+     Scanner sc = new Scanner(System.in);
+     System.out.println("Enter the word: ");
+     String word = sc.nextLine();
+     char ch = ' ';
+     for(int i = 0; i < word.length(); i++){
+         ch = word.charAt(i);
      }
-     System.out.println("graest element: " +average);
+     System.out.println(word.charAt(0));
+     System.out.println(ch);
 
 }
 }
