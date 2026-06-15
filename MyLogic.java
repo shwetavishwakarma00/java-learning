@@ -8,22 +8,11 @@ public class MyLogic {
      System.out.println("Enter the word: ");
      String word = sc.nextLine();
      char ch = ' ';
-     int upperCase = 0;
-     int lowerCase = 0;
+     String reverse = " ";
 
-     for(int i = 0; i < word.length(); i++){
-        ch = word.charAt(i);
-        if(Character.isUpperCase(ch)){
-            upperCase++;
-        }else if(Character.isLowerCase(ch)){
-            lowerCase++;
-        }
+     for(int i = (word.length()-1); i >= 0; i--){
+        ch = word.charAt(i);  
+        System.out.println(ch);
      }
-     System.out.println("UpperCase: " +upperCase);
-     System.out.println("LowerCase: " +lowerCase);
-
-
-     
-
 }
 }
